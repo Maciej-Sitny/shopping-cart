@@ -1,12 +1,62 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto:wght@100;300;400&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+
+:root{
+  --lightbrown:#47412a;
+}
+
 
 body {
+  background: #fffcf9;
   margin: 0;
-  font-family: 'Abril Fatface', sans-serif,cursive;
+  font-family: 'Abril Fatface', cursive;
+  font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color:var(--lightbrown);
+  width: 100vw;
+  height: 100vh;
 }
 
 code {
   font-family: 'Abril Fatface', sans-serif,cursive;
+}
+
+nav {
+  align-items: center;
+  border-bottom: 2px solid var(--lightbrown);
+  display: flex;
+  height: 70px;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 50px 0 50px;
+}
+
+.nav--left {
+  display: flex;
+  font-size:18px;
+  justify-content: space-between;
+  width: 150px;
+}
+
+.nav--right {
+  font-size: 18px;
+  text-align: right;
+  width: 150px;
+}
+
+.nav--link > h4 {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 30px;
+  
+  font-weight: 100;
+  margin: 0;
+  padding: 0;
+}
+.nav--link {
+  text-decoration:none;
+  color:var(--lightbrown);
 }
