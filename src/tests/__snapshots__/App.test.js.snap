@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Navbar component renders navbar correctly 1`] = `
+exports[`landing page render hero correctly 1`] = `
 <div>
   <div
     class="App"
@@ -26,9 +26,19 @@ exports[`Navbar component renders navbar correctly 1`] = `
         class="nav--link"
         href="/home"
       >
-        <h4>
-          La Casa
-        </h4>
+        <div
+          class="lacasa"
+        >
+           
+          <h4>
+            La Casa
+          </h4>
+          <img
+            alt=""
+            class="hero--title--starAndCircle"
+            src="starAndCircle-removebg-preview.png"
+          />
+        </div>
       </a>
       <div
         class="nav--right"
@@ -44,6 +54,116 @@ exports[`Navbar component renders navbar correctly 1`] = `
         </a>
       </div>
     </nav>
+    <div
+      class="hero"
+    >
+      <div
+        class="hero--title"
+      >
+        <h1>
+          MAKE YOUR HOME LIKE IN HEAVEN
+        </h1>
+        <img
+          alt=""
+          class="heroImage"
+          src="hero-image.jpg"
+        />
+        <div
+          class="hero--explore"
+        >
+          <p>
+            Make your home feel like in heaven.
+          </p>
+          <button>
+            Explore
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`landing page renders navbar correctly 1`] = `
+<div>
+  <div
+    class="App"
+  >
+    <nav>
+      <div
+        class="nav--left"
+      >
+        <a
+          class="nav--link"
+          href="/shop"
+        >
+          Shop
+        </a>
+        <a
+          class="nav--link"
+          href="/about"
+        >
+          About
+        </a>
+      </div>
+      <a
+        class="nav--link"
+        href="/home"
+      >
+        <div
+          class="lacasa"
+        >
+           
+          <h4>
+            La Casa
+          </h4>
+          <img
+            alt=""
+            class="hero--title--starAndCircle"
+            src="starAndCircle-removebg-preview.png"
+          />
+        </div>
+      </a>
+      <div
+        class="nav--right"
+      >
+        <a
+          class="nav--link"
+          href="/cart"
+        >
+          <i
+            class="fa-solid fa-cart-shopping"
+          />
+          (0)
+        </a>
+      </div>
+    </nav>
+    <div
+      class="hero"
+    >
+      <div
+        class="hero--title"
+      >
+        <h1>
+          MAKE YOUR HOME LIKE IN HEAVEN
+        </h1>
+        <img
+          alt=""
+          class="heroImage"
+          src="hero-image.jpg"
+        />
+        <div
+          class="hero--explore"
+        >
+          <p>
+            Make your home feel like in heaven.
+          </p>
+          <button>
+            Explore
+          </button>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 `;
