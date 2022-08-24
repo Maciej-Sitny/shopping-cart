@@ -7,7 +7,7 @@ import {Magnifico,SimplusQuadratus,BladeSitter,Cuddlex,MovingLuxury,HomeJungle,Q
 import {Agilos,StraightForward,Plusquam,Roped,Ceramic,TheMill,Twistify} from './images/tables/tablesImgs'
 import {Plumberus,GoldenLight,BlackWidow,NordicHesitation,StandingWave,StandingTriple,QuiteStable,BigBang,LoneLight,HexaOcto} from './images/lamps/lampsImgs'
 import {ChillingBirds,Planty,Us,HumbleNature,LongBirdRest,Moderni,Salad,JustBeauty,YellowDiamonds} from './images/pillows/pillowsImgs'
-
+import SeatGallery from './components/SeatGallery';
 const data = {
     "products": {
         "seats":[
@@ -354,6 +354,7 @@ function App() {
         <Navbar/>
         <Hero/>
         <img src={data.products.lamps[0].imgSource} alt=''/>
+        <SeatGallery data={data} />
     </div>
   );
 }
