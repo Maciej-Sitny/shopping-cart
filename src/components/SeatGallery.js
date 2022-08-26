@@ -2,21 +2,17 @@ import {MasterG,ComfyG,SquaroG,EnigmaG,UpheadG,SimplexG} from '../images/seats/g
 import Seat from './Seat';
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
-// import "../../node_modules/slick-carousel/slick/slick.css"; 
-// import "../../node_modules/slick-carousel/slick/slick-theme.css";
 import 'swiper/css';
 import { Pagination, Navigation } from "swiper";
 import "swiper/css/navigation";
-import rightArrow from "../images/swiper/MyprojectrightArrow.png"
-import leftArrow from "../images/swiper/MyprojectleftArrow.png"
+
 
 export default function SeatGallery(props) {
     let images = [MasterG,ComfyG,EnigmaG,UpheadG,SquaroG,SimplexG]
     let seatsDiv=[];
-    const [clicked, setClicked] = React.useState(false);
     for (let i=0;i<images.length;i++){
             seatsDiv.push(      
-                <Seat  cName={'infoGallerySeat'} image={images[i]} seatName={props.data.products.seats[i].name} officialPrice={props.data.products.seats[i].officialPrice} />
+                <Seat image={images[i]} seatName={props.data.products.seats[i].name} officialPrice={props.data.products.seats[i].officialPrice} />
             )
     }
     
@@ -34,12 +30,11 @@ export default function SeatGallery(props) {
                 swiper.navigation.update();
               }}
             >
-
-                    {seatsDiv.map(image=><SwiperSlide>{image}</SwiperSlide>)}
+             {seatsDiv.map(image=><SwiperSlide>{image}</SwiperSlide>)}
                     
                     
             </Swiper>
-            <div className='eloRight' ref={nextRef}><i onClick={()=>{setClicked(true);setClicked(false)}} className={`fa-solid fa-arrow-right-long fa-3x arrowRight`}></i></div>
+            <div className='eloRight' ref={nextRef}><i className={`fa-solid fa-arrow-right-long fa-3x arrowRight`}></i></div>
         </div>
     )
 

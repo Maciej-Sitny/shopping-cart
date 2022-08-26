@@ -354,7 +354,6 @@ function App() {
     <div className="App">
         <Navbar/>
         <Hero/>
-        {/* <img src={data.products.lamps[0].imgSource} alt=''/> */}
         <div className='bestseller'>
           <div className='bestseller--leftLine'></div>
           <h1>Our Best Seller</h1>
