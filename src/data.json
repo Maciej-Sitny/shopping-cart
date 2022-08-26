@@ -4,42 +4,42 @@
     "products": {
         "seats":[
             {
-                "imgSource": "/home/maciej/the_odin_project/javascript/react/react-shopping-cart/shopping-cart/src/images/My project(1).png",
+                "imgSource": "/My project(1).png",
                 "officialPrice": 30,
                 "discount":0,
                 "name":"Master",
                 "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mollis consequat risus in ornare. Praesent rhoncus elementum eros, at accumsan augue dapibus condimentum. Praesent dignissim varius pulvinar. Pellentesque sodales ex at dolor varius, quis tincidunt elit bibendum. Aenean eu urna ut arcu condimentum hendrerit nec eget nibh. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut vel sagittis velit. Sed ut eros vel lectus venenatis sodales."
             },
             {
-                "imgSource": "/home/maciej/the_odin_project/javascript/react/react-shopping-cart/shopping-cart/src/images/My project(2).png",
+                "imgSource": "/My project(2).png",
                 "officialPrice": 45,
                 "discount":0,
                 "name":"Comfy",
                 "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mollis consequat risus in ornare. Praesent rhoncus elementum eros, at accumsan augue dapibus condimentum. Praesent dignissim varius pulvinar. Pellentesque sodales ex at dolor varius, quis tincidunt elit bibendum. Aenean eu urna ut arcu condimentum hendrerit nec eget nibh. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut vel sagittis velit. Sed ut eros vel lectus venenatis sodales."
             },
             {
-                "imgSource": "/home/maciej/the_odin_project/javascript/react/react-shopping-cart/shopping-cart/src/images/My project(3).png",
+                "imgSource": "/My project(3).png",
                 "officialPrice": 45,
                 "discount":0,
                 "name":"Enigma",
                 "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mollis consequat risus in ornare. Praesent rhoncus elementum eros, at accumsan augue dapibus condimentum. Praesent dignissim varius pulvinar. Pellentesque sodales ex at dolor varius, quis tincidunt elit bibendum. Aenean eu urna ut arcu condimentum hendrerit nec eget nibh. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut vel sagittis velit. Sed ut eros vel lectus venenatis sodales."
             },
             {
-                "imgSource": "/home/maciej/the_odin_project/javascript/react/react-shopping-cart/shopping-cart/src/images/My project(4).png",
+                "imgSource": "/My project(4).png",
                 "officialPrice": 40,
                 "discount":0,
                 "name":"Uphead",
                 "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mollis consequat risus in ornare. Praesent rhoncus elementum eros, at accumsan augue dapibus condimentum. Praesent dignissim varius pulvinar. Pellentesque sodales ex at dolor varius, quis tincidunt elit bibendum. Aenean eu urna ut arcu condimentum hendrerit nec eget nibh. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut vel sagittis velit. Sed ut eros vel lectus venenatis sodales."
             },
             {
-                "imgSource": "/home/maciej/the_odin_project/javascript/react/react-shopping-cart/shopping-cart/src/images/My project(5).png",
+                "imgSource": "/My project(5).png",
                 "officialPrice": 25,
                 "discount":0,
                 "name":"Squaro",
                 "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mollis consequat risus in ornare. Praesent rhoncus elementum eros, at accumsan augue dapibus condimentum. Praesent dignissim varius pulvinar. Pellentesque sodales ex at dolor varius, quis tincidunt elit bibendum. Aenean eu urna ut arcu condimentum hendrerit nec eget nibh. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut vel sagittis velit. Sed ut eros vel lectus venenatis sodales."
             },
             {
-                "imgSource": "/home/maciej/the_odin_project/javascript/react/react-shopping-cart/shopping-cart/src/images/My project(6).png",
+                "imgSource": "/My project(6).png",
                 "officialPrice": 20,
                 "discount":0,
                 "name":"Simplex",
@@ -48,49 +48,49 @@
         ],
         "sofas": [
             {
-                "imgSource": "/home/maciej/the_odin_project/javascript/react/react-shopping-cart/shopping-cart/src/images/sofas/pexels-andrea-piacquadio-3757055.jpg",
+                "imgSource": "/sofas/pexels-andrea-piacquadio-3757055.jpg",
                 "officialPrice": 170,
                 "discount":0,
                 "name":"Magnifico",
                 "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mollis consequat risus in ornare. Praesent rhoncus elementum eros, at accumsan augue dapibus condimentum. Praesent dignissim varius pulvinar. Pellentesque sodales ex at dolor varius, quis tincidunt elit bibendum. Aenean eu urna ut arcu condimentum hendrerit nec eget nibh. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut vel sagittis velit. Sed ut eros vel lectus venenatis sodales."
             },
             {
-                "imgSource": "/home/maciej/the_odin_project/javascript/react/react-shopping-cart/shopping-cart/src/images/sofas/pexels-ksenia-chernaya-3965513.jpg",
+                "imgSource": "/sofas/pexels-ksenia-chernaya-3965513.jpg",
                 "officialPrice": 100,
                 "discount":0,
                 "name":"Simplus Quadratus",
                 "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mollis consequat risus in ornare. Praesent rhoncus elementum eros, at accumsan augue dapibus condimentum. Praesent dignissim varius pulvinar. Pellentesque sodales ex at dolor varius, quis tincidunt elit bibendum. Aenean eu urna ut arcu condimentum hendrerit nec eget nibh. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut vel sagittis velit. Sed ut eros vel lectus venenatis sodales."
             },
             {
-                "imgSource": "/home/maciej/the_odin_project/javascript/react/react-shopping-cart/shopping-cart/src/images/sofas/pexels-martin-péchy-1866149.jpg",
+                "imgSource": "/sofas/pexels-martin-péchy-1866149.jpg",
                 "officialPrice": 300,
                 "discount":0,
                 "name":"Blade Sitter",
                 "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mollis consequat risus in ornare. Praesent rhoncus elementum eros, at accumsan augue dapibus condimentum. Praesent dignissim varius pulvinar. Pellentesque sodales ex at dolor varius, quis tincidunt elit bibendum. Aenean eu urna ut arcu condimentum hendrerit nec eget nibh. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut vel sagittis velit. Sed ut eros vel lectus venenatis sodales."
             },
             {
-                "imgSource": "/home/maciej/the_odin_project/javascript/react/react-shopping-cart/shopping-cart/src/images/sofas/pexels-max-vakhtbovych-6934175.jpg",
+                "imgSource": "/sofas/pexels-max-vakhtbovych-6934175.jpg",
                 "officialPrice": 190,
                 "discount":0,
                 "name":"Cuddlex",
                 "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mollis consequat risus in ornare. Praesent rhoncus elementum eros, at accumsan augue dapibus condimentum. Praesent dignissim varius pulvinar. Pellentesque sodales ex at dolor varius, quis tincidunt elit bibendum. Aenean eu urna ut arcu condimentum hendrerit nec eget nibh. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut vel sagittis velit. Sed ut eros vel lectus venenatis sodales."
             },
             {
-                "imgSource": "/home/maciej/the_odin_project/javascript/react/react-shopping-cart/shopping-cart/src/images/sofas/pexels-pixabay-276583.jpg",
+                "imgSource": "/sofas/pexels-pixabay-276583.jpg",
                 "officialPrice": 250,
                 "discount":0,
                 "name":"Moving Luxury",
                 "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mollis consequat risus in ornare. Praesent rhoncus elementum eros, at accumsan augue dapibus condimentum. Praesent dignissim varius pulvinar. Pellentesque sodales ex at dolor varius, quis tincidunt elit bibendum. Aenean eu urna ut arcu condimentum hendrerit nec eget nibh. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut vel sagittis velit. Sed ut eros vel lectus venenatis sodales."
             },
             {
-                "imgSource": "/home/maciej/the_odin_project/javascript/react/react-shopping-cart/shopping-cart/src/images/sofas/pexels-pixabay-276663.jpg",
+                "imgSource": "/sofas/pexels-pixabay-276663.jpg",
                 "officialPrice": 120,
                 "discount":0,
                 "name":"Home Jungle",
                 "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mollis consequat risus in ornare. Praesent rhoncus elementum eros, at accumsan augue dapibus condimentum. Praesent dignissim varius pulvinar. Pellentesque sodales ex at dolor varius, quis tincidunt elit bibendum. Aenean eu urna ut arcu condimentum hendrerit nec eget nibh. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut vel sagittis velit. Sed ut eros vel lectus venenatis sodales."
             },
             {
-                "imgSource": "/home/maciej/the_odin_project/javascript/react/react-shopping-cart/shopping-cart/src/images/sofas/pexels-vecislavas-popa-1571457.jpg",
+                "imgSource": "/sofas/pexels-vecislavas-popa-1571457.jpg",
                 "officialPrice": 200,
                 "discount":0,
                 "name":"Quo Vadis",
@@ -99,49 +99,49 @@
         ],
         "tables":[
             {
-            "imgSource": "/home/maciej/the_odin_project/javascript/react/react-shopping-cart/shopping-cart/src/images/tables/40121-3.jpg",
+            "imgSource": "/tables/40121-3.jpg",
                 "officialPrice": 400,
                 "discount":0,
                 "name":"Agilos",
                 "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mollis consequat risus in ornare. Praesent rhoncus elementum eros, at accumsan augue dapibus condimentum. Praesent dignissim varius pulvinar. Pellentesque sodales ex at dolor varius, quis tincidunt elit bibendum. Aenean eu urna ut arcu condimentum hendrerit nec eget nibh. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut vel sagittis velit. Sed ut eros vel lectus venenatis sodales."
             },
             {
-                "imgSource": "/home/maciej/the_odin_project/javascript/react/react-shopping-cart/shopping-cart/src/images/tables/garant-craft-02-de3478a3.jpg",
+                "imgSource": "/tables/garant-craft-02-de3478a3.jpg",
                 "officialPrice": 280,
                 "discount":0,
                 "name":"Straight&Forward",
                 "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mollis consequat risus in ornare. Praesent rhoncus elementum eros, at accumsan augue dapibus condimentum. Praesent dignissim varius pulvinar. Pellentesque sodales ex at dolor varius, quis tincidunt elit bibendum. Aenean eu urna ut arcu condimentum hendrerit nec eget nibh. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut vel sagittis velit. Sed ut eros vel lectus venenatis sodales."
             },
             {
-                "imgSource": "/home/maciej/the_odin_project/javascript/react/react-shopping-cart/shopping-cart/src/images/tables/okragly-stol-rozkladany-100-300-cm-inferno.jpg",
+                "imgSource": "/tables/okragly-stol-rozkladany-100-300-cm-inferno.jpg",
                 "officialPrice": 180,
                 "discount":0,
                 "name":"Plusquam",
                 "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mollis consequat risus in ornare. Praesent rhoncus elementum eros, at accumsan augue dapibus condimentum. Praesent dignissim varius pulvinar. Pellentesque sodales ex at dolor varius, quis tincidunt elit bibendum. Aenean eu urna ut arcu condimentum hendrerit nec eget nibh. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut vel sagittis velit. Sed ut eros vel lectus venenatis sodales."
             },
             {
-            "imgSource": "/home/maciej/the_odin_project/javascript/react/react-shopping-cart/shopping-cart/src/images/tables/stol-rozkladany-derrick-halmar-zlozony-z-krzeslami-k369.jpg",
+            "imgSource": "/tables/stol-rozkladany-derrick-halmar-zlozony-z-krzeslami-k369.jpg",
                 "officialPrice": 220,
                 "discount":0,
                 "name":"Roped",
                 "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mollis consequat risus in ornare. Praesent rhoncus elementum eros, at accumsan augue dapibus condimentum. Praesent dignissim varius pulvinar. Pellentesque sodales ex at dolor varius, quis tincidunt elit bibendum. Aenean eu urna ut arcu condimentum hendrerit nec eget nibh. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut vel sagittis velit. Sed ut eros vel lectus venenatis sodales."
             },
             {
-            "imgSource": "/home/maciej/the_odin_project/javascript/react/react-shopping-cart/shopping-cart/src/images/tables/stol-rozkladany-euphoria-szklo-ceramiczne-optyka-lava-40170.jpg",
+            "imgSource": "/tables/stol-rozkladany-euphoria-szklo-ceramiczne-optyka-lava-40170.jpg",
                 "officialPrice": 400,
                 "discount":0,
                 "name":"Ceramic",
                 "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mollis consequat risus in ornare. Praesent rhoncus elementum eros, at accumsan augue dapibus condimentum. Praesent dignissim varius pulvinar. Pellentesque sodales ex at dolor varius, quis tincidunt elit bibendum. Aenean eu urna ut arcu condimentum hendrerit nec eget nibh. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut vel sagittis velit. Sed ut eros vel lectus venenatis sodales."
             },
             {
-                "imgSource": "/home/maciej/the_odin_project/javascript/react/react-shopping-cart/shopping-cart/src/images/tables/stol-ze-starych-bali-4.jpg",
+                "imgSource": "/tables/stol-ze-starych-bali-4.jpg",
                 "officialPrice": 550,
                 "discount":0,
                 "name":"The Mill",
                 "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mollis consequat risus in ornare. Praesent rhoncus elementum eros, at accumsan augue dapibus condimentum. Praesent dignissim varius pulvinar. Pellentesque sodales ex at dolor varius, quis tincidunt elit bibendum. Aenean eu urna ut arcu condimentum hendrerit nec eget nibh. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut vel sagittis velit. Sed ut eros vel lectus venenatis sodales."
             },
             {
-            "imgSource": "/home/maciej/the_odin_project/javascript/react/react-shopping-cart/shopping-cart/src/images/tables/zaff-12-wwwu2.jpg",
+            "imgSource": "/tables/zaff-12-wwwu2.jpg",
                 "officialPrice": 200,
                 "discount":0,
                 "name":"Twistify",

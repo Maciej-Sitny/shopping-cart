@@ -8,6 +8,7 @@ import {Agilos,StraightForward,Plusquam,Roped,Ceramic,TheMill,Twistify} from './
 import {Plumberus,GoldenLight,BlackWidow,NordicHesitation,StandingWave,StandingTriple,QuiteStable,BigBang,LoneLight,HexaOcto} from './images/lamps/lampsImgs'
 import {ChillingBirds,Planty,Us,HumbleNature,LongBirdRest,Moderni,Salad,JustBeauty,YellowDiamonds} from './images/pillows/pillowsImgs'
 import SeatGallery from './components/SeatGallery';
+
 const data = {
     "products": {
         "seats":[
@@ -38,7 +39,7 @@ const data = {
             {
               'id':nanoid(),
                 "imgSource": Uphead,
-                "officialPrice": 40,
+                "officialPrice": 25,
                 "discount":0,
                 "name":"Uphead",
                 "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mollis consequat risus in ornare. Praesent rhoncus elementum eros, at accumsan augue dapibus condimentum. Praesent dignissim varius pulvinar. Pellentesque sodales ex at dolor varius, quis tincidunt elit bibendum. Aenean eu urna ut arcu condimentum hendrerit nec eget nibh. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut vel sagittis velit. Sed ut eros vel lectus venenatis sodales."
@@ -46,7 +47,7 @@ const data = {
             {
               'id':nanoid(),
                 "imgSource": Squaro,
-                "officialPrice": 25,
+                "officialPrice": 40,
                 "discount":0,
                 "name":"Squaro",
                 "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mollis consequat risus in ornare. Praesent rhoncus elementum eros, at accumsan augue dapibus condimentum. Praesent dignissim varius pulvinar. Pellentesque sodales ex at dolor varius, quis tincidunt elit bibendum. Aenean eu urna ut arcu condimentum hendrerit nec eget nibh. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut vel sagittis velit. Sed ut eros vel lectus venenatis sodales."
@@ -353,7 +354,13 @@ function App() {
     <div className="App">
         <Navbar/>
         <Hero/>
-        <img src={data.products.lamps[0].imgSource} alt=''/>
+        {/* <img src={data.products.lamps[0].imgSource} alt=''/> */}
+        <div className='bestseller'>
+          <div className='bestseller--leftLine'></div>
+          <h1>Our Best Seller</h1>
+          <div className='bestseller--rightLine'></div>
+        </div>
+
         <SeatGallery data={data} />
     </div>
   );
