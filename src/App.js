@@ -8,6 +8,9 @@ import {Agilos,StraightForward,Plusquam,Roped,Ceramic,TheMill,Twistify} from './
 import {Plumberus,GoldenLight,BlackWidow,NordicHesitation,StandingWave,StandingTriple,QuiteStable,BigBang,LoneLight,HexaOcto} from './images/lamps/lampsImgs'
 import {ChillingBirds,Planty,Us,HumbleNature,LongBirdRest,Moderni,Salad,JustBeauty,YellowDiamonds} from './images/pillows/pillowsImgs'
 import SeatGallery from './components/SeatGallery';
+import Explore from './components/Explore';
+import LoyalSeat from './images/explore/pexels-valeria-boltneva-827518.jpg'
+import WoodenPlanter from './images/explore/pexels-valeria-boltneva-1129413.jpg'
 
 const data = {
     "products": {
@@ -361,6 +364,7 @@ function App() {
         </div>
 
         <SeatGallery data={data} />
+        <Explore down={{image:WoodenPlanter,productName:'Wooden Planter',price:'5'}} up={{image:LoyalSeat,productName:'Loyal Seat',price:'60'}}/>
     </div>
   );
 }

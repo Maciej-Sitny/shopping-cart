@@ -9,7 +9,7 @@ export default function Hero() {
             <img className='heroImage' src={heroImage} alt=""/>
             <div className='hero--explore'>
                 <p>Make your home feel like in heaven.</p>
-                <button>Explore</button>
+                <button className='exploreButton'>Explore</button>
             </div>
         </div>
     </div>
