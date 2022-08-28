@@ -308,7 +308,7 @@ nav {
   margin-top:100px;
   background: #faf2ea;
   /* height:500%; */
-  padding: 200px 10% 200px 10%;
+  padding: 200px 10% 100px 10%;
 }
 
 @media only screen and (max-width: 1612px) {
@@ -317,6 +317,7 @@ nav {
 
 @media only screen and (max-width: 1422px) {
   .explore{padding: 200px 3% 200px 3%;}
+  .up3 {left:30%;}
 }
 
 .explore--down,.explore--up{
@@ -366,7 +367,7 @@ nav {
 
 .explore--desc >h1{
   font-size: 80px;
-  font-family: 'Abril Fatface', cursive;;
+  font-family: 'Abril Fatface', cursive;
 }
 
 .explore--desc >p {
@@ -392,7 +393,9 @@ nav {
   width: auto;
   position:relative;
   /* top:5%; */
-  left:50%;
+  left:35%;
+
+  overflow: hidden;
 }
 
 .down1 {
@@ -405,3 +408,38 @@ nav {
   top:-10%;
   right:-50%;
 }
+
+.damnSure {
+  width:100%;
+  height: 350px;
+  color:#fffcf9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 250%;
+  font-family: 'Abril Fatface', cursive;
+  background-image: url("./images/pexels-jonathan-borba-3263716.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.damnSure > h1 {
+  text-shadow: 0 0 5px var(--lightbrown);
+}
+
+@media only screen and (max-width: 1612px) {
+  .explore{padding: 200px 5% 200px 5%;};
+}
+
+@media only screen and (max-width: 1612px) {
+  .up3 {left:25%;}
+}
+
+@media only screen and (max-width: 1422px) {
+  .explore{padding: 200px 3% 200px 3%;}
+}
+
+@media only screen and (max-width: 1422px) {
+  .up3 {left:20%;}}

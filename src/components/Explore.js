@@ -36,6 +36,9 @@ export default function Explore(props) {
                    
                 </div>
             </div>
+            <div className='damnSure'>
+                <h1>Design won't save the world but it damn sure makes it look good</h1>
+            </div>
         </div>
     )
 }
