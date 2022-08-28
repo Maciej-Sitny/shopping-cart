@@ -307,14 +307,22 @@ nav {
 .explore {
   margin-top:100px;
   background: #faf2ea;
-  height:290vh;
+  /* height:500%; */
   padding: 200px 10% 200px 10%;
+}
+
+@media only screen and (max-width: 1612px) {
+  .explore{padding: 200px 5% 200px 5%;}
+}
+
+@media only screen and (max-width: 1422px) {
+  .explore{padding: 200px 3% 200px 3%;}
 }
 
 .explore--down,.explore--up{
   display: flex;
   justify-content: space-between;
-  gap:200px;
+  gap:10%;
 }
 
 .explore--down{
