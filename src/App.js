@@ -5,12 +5,13 @@ import {nanoid} from 'nanoid'
 import {Master,Comfy,Enigma,Uphead,Squaro,Simplex} from './images/seats/seatsImgs'
 import {Magnifico,SimplusQuadratus,BladeSitter,Cuddlex,MovingLuxury,HomeJungle,QuoVadis} from './images/sofas/sofasImgs'
 import {Agilos,StraightForward,Plusquam,Roped,Ceramic,TheMill,Twistify} from './images/tables/tablesImgs'
-import {Plumberus,GoldenLight,BlackWidow,NordicHesitation,StandingWave,StandingTriple,QuiteStable,BigBang,LoneLight,HexaOcto} from './images/lamps/lampsImgs'
+import {Plumberus,GoldenLight,BlackWidow,NordicHesitation,StandingWave,StandingTriple,QuiteStable,BigBang,LoneLight,HexaOcto,Shovelio} from './images/lamps/lampsImgs'
 import {ChillingBirds,Planty,Us,HumbleNature,LongBirdRest,Moderni,Salad,JustBeauty,YellowDiamonds} from './images/pillows/pillowsImgs'
 import SeatGallery from './components/SeatGallery';
 import Explore from './components/Explore';
 import LoyalSeat from './images/explore/pexels-valeria-boltneva-827518.jpg'
 import WoodenPlanter from './images/explore/pexels-valeria-boltneva-1129413.jpg'
+import TopGallery from './components/TopGallery';
 
 const data = {
     "products": {
@@ -272,6 +273,15 @@ const data = {
               "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mollis consequat risus in ornare. Praesent rhoncus elementum eros, at accumsan augue dapibus condimentum. Praesent dignissim varius pulvinar. Pellentesque sodales ex at dolor varius, quis tincidunt elit bibendum. Aenean eu urna ut arcu condimentum hendrerit nec eget nibh. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut vel sagittis velit. Sed ut eros vel lectus venenatis sodales.",
               "background":true
           },
+          {
+            'id':nanoid(),
+          "imgSource": Shovelio,
+              "officialPrice":20,
+              "discount":0,
+              "name":"Shovelio",
+              "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mollis consequat risus in ornare. Praesent rhoncus elementum eros, at accumsan augue dapibus condimentum. Praesent dignissim varius pulvinar. Pellentesque sodales ex at dolor varius, quis tincidunt elit bibendum. Aenean eu urna ut arcu condimentum hendrerit nec eget nibh. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut vel sagittis velit. Sed ut eros vel lectus venenatis sodales.",
+              "background":false
+          },
         ],
         'pillows':[
           {
@@ -365,6 +375,7 @@ function App() {
 
         <SeatGallery data={data} />
         <Explore down={{image:WoodenPlanter,productName:'Wooden Planter',price:'5'}} up={{image:LoyalSeat,productName:'Loyal Seat',price:'60'}}/>
+        <TopGallery products={{pillows:data.products.pillows.slice(0,4),lamps:data.products.lamps.filter(lamp=>lamp.name==="Black Widow"||lamp.name==="Golden Light"||lamp.name==="Shovelio"), }} />
     </div>
   );
 }

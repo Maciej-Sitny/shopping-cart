@@ -8,6 +8,6 @@ import QuiteStable from './pexels-eneida-nieves-1112598.jpg'
 import BigBang from './pexels-luis-ruiz-1370763.jpg'
 import LoneLight from './pexels-thorn-yang-154161.jpg'
 import HexaOcto from './pexels-victor-freitas-973505.jpg'
+import Shovelio from './My project(18).png'
 
-
-export {Plumberus,GoldenLight,BlackWidow,NordicHesitation,StandingWave,StandingTriple,QuiteStable,BigBang,LoneLight,HexaOcto}
+export {Plumberus,GoldenLight,BlackWidow,NordicHesitation,StandingWave,StandingTriple,QuiteStable,BigBang,LoneLight,HexaOcto,Shovelio}

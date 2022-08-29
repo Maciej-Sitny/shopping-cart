@@ -463,3 +463,39 @@ nav {
 
 @media only screen and (max-width: 1422px) {
   .up3 {left:20%;}}
+
+.topGallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+
+.topGallery--slider{
+  display: flex;
+  width:80vw;
+  overflow-y: scroll;
+}
+
+.topProduct {
+  width: 400px;
+  height: 600px;
+}
+
+.topProduct--imageDiv {
+  background: #faf2ea;
+  height: 400px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.topProduct--imageDiv >img{
+  /* max-width: 300px;
+  max-height: 400px; */
+  height: 400px;
+  width: 500px;
+  object-fit: cover;
+}
