@@ -144,6 +144,16 @@ nav {
   border-radius: 5px;
 }
 
+.exploreButton:hover {
+  background-color:var(--lightbrown);
+  border:2px solid #fffcf9;
+  color:#fffcf9;
+}
+
+.exploreButton:active{
+  box-shadow: inset 0px 0px 5px #fffcf9;
+}
+
 .seatGallery {
   display: flex;
   justify-content: space-between;
@@ -384,6 +394,16 @@ nav {
   font-size: 20px;
   height: 50px;
   border-radius: 5px;
+}
+
+.exploreButton2:hover {
+  background-color:var(--lightbrown);
+  border:2px solid #faf2ea;
+  color:#faf2ea;
+}
+
+.exploreButton2:active{
+  box-shadow: inset 0px 0px 5px #faf2ea;
 }
 
 .up3 {
