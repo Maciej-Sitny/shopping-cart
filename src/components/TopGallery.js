@@ -37,18 +37,19 @@ export default function TopGallery(props) {
                 {topProducts.map(product=>(<div className='topProduct'>
                     <div className='topProduct--imageDiv'>
                         <img alt="" src={product.imgSource}/>
-                        {Boolean(product.discount)&&<p>Sale</p>}
+                        
                     </div>
                     <div className='topProduct--details'>
-                        <h2>{product.name}</h2>
+                        <h3>{product.name}</h3>
                         {Boolean(product.discount)? (<div className='topProduct--details--priceWithDiscount'>
                             <p>${product.officialPrice}</p>
-                            <h2>${product.discount}</h2>
+                            <h2>${product.officialPrice-(product.discount/100)*product.officialPrice}</h2>
                         </div>)
                         :
-                        `$${product.officialPrice}`
+                        <h1>${product.officialPrice}</h1>
                         }
                     </div>
+                    {Boolean(product.discount)&&<h1 className='topProductDiscountInfo'>-{product.discount}%</h1>}
                 </div>))}
             </div>
         </div>
