@@ -13,6 +13,8 @@ import LoyalSeat from './images/explore/pexels-valeria-boltneva-827518.jpg'
 import WoodenPlanter from './images/explore/pexels-valeria-boltneva-1129413.jpg'
 import TopGallery from './components/TopGallery';
 import FindOut from './components/FindOut';
+import Footer from './components/Footer';
+
 
 const data = {
     "products": {
@@ -378,6 +380,7 @@ function App() {
         <Explore down={{image:WoodenPlanter,productName:'Wooden Planter',price:'5'}} up={{image:LoyalSeat,productName:'Loyal Seat',price:'60'}}/>
         <TopGallery products={{pillows:data.products.pillows.slice(0,4),lamps:data.products.lamps.filter(lamp=>lamp.name==="Black Widow"||lamp.name==="Golden Light"||lamp.name==="Shovelio"), }} />
         <FindOut />
+        <Footer />
     </div>
   );
 }

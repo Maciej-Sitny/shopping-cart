@@ -23,9 +23,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color:var(--lightbrown);
   width: 100vw;
-  height: 700vh;
+  height: 860vh;
   scroll-behavior: smooth;
   scrollbar-color: red;
+  position: relative;
 }
 
 code {
@@ -717,3 +718,80 @@ body::-webkit-scrollbar-track {
   width: 49%;
   margin-top:0;
 }
+
+footer {
+  height:400px;
+  /* background: red; */
+  width: 100%;
+  width:100vw;
+  position:absolute;
+  bottom:0;
+  
+}
+
+.footer--up {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #faf2ea;
+  padding: 3% 5% 5% 5%;
+}
+
+.footer--up>h1 {
+  font-size: 50px;
+  font-family: 'Abril Fatface', cursive;
+}
+
+.footer--up>div{
+  width:27%;
+  border-bottom: 1px solid #47412a;
+  padding-bottom: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer--up>div>input {
+  background: transparent;
+  border:0;
+  outline:none;
+  color:#47412a;
+  font-size: 17px;
+  width:300px;
+}
+
+.footer--up>div>button {
+  background: #47412a;
+  color:#faf2ea;
+  font-size: 17px;
+  border:0;
+  border-bottom: 2px solid #47412a;
+  border-radius: 5%;
+  width:150px;
+  height: 40px;
+}
+
+.footer--down {
+  background: var(--lightbrown);
+  display: flex;
+  justify-content: space-between;
+  color:#faf2ea;
+  padding: 5% 5% 5% 5%;
+}
+
+.footer--down--left >h2{
+  font-size: 35px;
+  font-family: 'Abril Fatface', cursive;
+}
+
+.footer--down--right{
+  display: flex;
+  justify-content: space-between;
+  width: 10%;
+}
+
+.footer--down--right>div {
+  display: flex;
+  flex-direction: column;
+}
+
