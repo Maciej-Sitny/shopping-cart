@@ -592,31 +592,122 @@ body::-webkit-scrollbar-track {
   /* justify-content: center; */
   padding: 0;
   margin-bottom: 5%;
+
+}
+
+.findOut--Wide1--container > h2 {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  margin: 0;
+  color:#fffcf9;
+  text-decoration: underline;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.findOut--Wide1--container {
+  background: var(--lightbrown);
+  height: 90%;
+  width: 100%;
+  position: relative;
+  text-align: center;
 }
 
 .findOut--Wide1 {
-  height: 90%;
+  height: 100%;
   width: 100%;
   object-fit: cover;
-  /* height: auto;
-  width: auto; */
+}
+
+.findOut--Wide1:hover {
+  opacity: 0.5;
+}
+
+.findOut--Wide1--container > h2:hover ~ .findOut--Wide1 {
+  opacity: 0.5;
 }
 
 .findOut >div >p{
   font-size: 20px;
-  /* margin-bottom: 0; */
 }
 
-.findOut--Small1 {
+
+
+.findOut--Small1--container {
   height: 75%;
   width:100%;
+  background: var(--lightbrown);
+  position:relative;
+}
+.findOut--Small1 {
+  height: 100%;
+  width:100%;
   object-fit: cover;
+}
+
+.findOut--Small1--container > h2 {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  margin: 0;
+  color:#fffcf9;
+  text-decoration: underline;
+  z-index: 1;
+  cursor: pointer;
+}
+.findOut--Small1:hover {
+  opacity: 0.5;
+}
+
+.findOut--Small1--container > h2:hover ~ .findOut--Small1 {
+  opacity: 0.5;
+}
+
+
+.findOut--GreenWall--container {
+  height: 75%;
+  width:100%;
+  background: var(--lightbrown);
+  position:relative;
 }
 .findOut--GreenWall {
-  height: 75%;
+  height: 100%;
   width:100%;
   object-fit: cover;
 }
+
+.findOut--GreenWall--container > h2 {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  margin: 0;
+  color:#fffcf9;
+  text-decoration: underline;
+  z-index: 1;
+  cursor: pointer;
+}
+.findOut--GreenWall:hover {
+  opacity: 0.5;
+}
+
+.findOut--GreenWall--container > h2:hover ~ .findOut--GreenWall {
+  opacity: 0.5;
+}
+
+
 .findOut--second {
   margin-top:0;
   width: 49%;
