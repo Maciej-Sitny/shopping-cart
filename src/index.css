@@ -575,3 +575,54 @@ body::-webkit-scrollbar-track {
   color:#fec501;
 }
 
+.findOut {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 125px;
+  padding: 0 3% 0 3%;
+  gap:2%;
+}
+
+.findOut--first {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* justify-content: center; */
+  padding: 0;
+  margin-bottom: 5%;
+}
+
+.findOut--Wide1 {
+  height: 90%;
+  width: 100%;
+  object-fit: cover;
+  /* height: auto;
+  width: auto; */
+}
+
+.findOut >div >p{
+  font-size: 20px;
+  /* margin-bottom: 0; */
+}
+
+.findOut--Small1 {
+  height: 75%;
+  width:100%;
+  object-fit: cover;
+}
+.findOut--GreenWall {
+  height: 75%;
+  width:100%;
+  object-fit: cover;
+}
+.findOut--second {
+  margin-top:0;
+  width: 49%;
+}
+
+.findOut--third {
+  width: 49%;
+  margin-top:0;
+}
