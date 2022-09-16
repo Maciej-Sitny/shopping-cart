@@ -853,3 +853,65 @@ footer {
   position: absolute;
   z-index: 0;
 }
+
+.shop--products {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap:10px;
+}
+
+.shop--seat {
+  border-radius: 30px;
+  background-color: #faf2ea;
+  width: 500px;
+  height: 600px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.shop--seat > img{
+  width: 600px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.shop--seat > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+
+.shop--seat--details--oldPrice {
+  font-size: 25px;
+  margin: 0;
+
+}
+
+.shop--seat--details--oldPrice--textDecoration {
+  text-decoration: line-through;
+}
+
+.shop--seat--discount {
+  height: 0;
+}
+
+.shop--seat--details--oldPrice--discount {
+  color:#fec501;
+  position: relative;
+  font-size: 35px;
+  margin:0;
+  z-index: 1;
+}
+
+.shop--seat--details--newPrice {
+  color:#fec501;
+  font-size: 40px;
+  margin: 0;
+}
