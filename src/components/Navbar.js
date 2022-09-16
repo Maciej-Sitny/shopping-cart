@@ -9,7 +9,7 @@ export default function Navbar(props) {
                 <Link className='nav--link' to='/shop'>Shop</Link>
                 <Link className='nav--link' to='/about'>About</Link>
             </div>
-            <Link className='nav--link' to='/home'><div className="lacasa"> <h4>La Casa</h4><img className='hero--title--starAndCircle' src={starAndCircle} alt="" /></div></Link>
+            <Link className='nav--link' to='/'><div className="lacasa"> <h4>La Casa</h4><img className='hero--title--starAndCircle' src={starAndCircle} alt="" /></div></Link>
             <div className="nav--right">
                 <Link className='nav--link' to='/cart'><i className="fa-solid fa-cart-shopping"></i>(0)</Link>
             </div>

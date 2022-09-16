@@ -23,7 +23,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color:var(--lightbrown);
   width: 100vw;
-  height: 860vh;
+  /* height: 1000vh; */
   scroll-behavior: smooth;
   scrollbar-color: red;
   position: relative;
@@ -515,14 +515,20 @@ body::-webkit-scrollbar-track {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  z-index: -1;
 }
 
 .topProduct--imageDiv >img{
   /* max-width: 300px;
   max-height: 400px; */
-  height: 500px;
-  width: 600px;
-  object-fit: cover;
+  height: 600px;
+  width: 500px;
+  object-fit:cover;
+}
+
+.topProduct--imageDiv:hover >img {
+  height: 650px;
+  width: 550px;
 }
 
 .topProduct--imageDiv >p {
@@ -580,8 +586,10 @@ body::-webkit-scrollbar-track {
   display: flex;
   flex-wrap: wrap;
   margin-top: 125px;
-  padding: 0 3% 0 3%;
+  padding: 0 3% 35% 3%;
   gap:2%;
+  height:230vh;
+  /* margin-bottom: 100vh; */
 }
 
 .findOut--first {
@@ -712,6 +720,7 @@ body::-webkit-scrollbar-track {
 .findOut--second {
   margin-top:0;
   width: 49%;
+  /* height: 100vh; */
 }
 
 .findOut--third {
@@ -726,7 +735,7 @@ footer {
   width:100vw;
   position:absolute;
   bottom:0;
-  
+  /* margin-top: 20vh; */
 }
 
 .footer--up {
@@ -740,6 +749,7 @@ footer {
 .footer--up>h1 {
   font-size: 50px;
   font-family: 'Abril Fatface', cursive;
+  z-index: 1;
 }
 
 .footer--up>div{
@@ -765,33 +775,80 @@ footer {
   color:#faf2ea;
   font-size: 17px;
   border:0;
-  border-bottom: 2px solid #47412a;
   border-radius: 5%;
   width:150px;
   height: 40px;
+  cursor: pointer;
+}
+
+.footer--up>div>button:active {
+  color:#47412a;
+  background:#faf2ea;
+  border:2px solid #47412a;
 }
 
 .footer--down {
   background: var(--lightbrown);
   display: flex;
   justify-content: space-between;
+  align-items: center;
   color:#faf2ea;
-  padding: 5% 5% 5% 5%;
+  padding: 5% 10% 5% 10%;
+  position: relative;
 }
 
 .footer--down--left >h2{
-  font-size: 35px;
+  font-size: 40px;
   font-family: 'Abril Fatface', cursive;
+  z-index: 1;
+  
 }
 
 .footer--down--right{
   display: flex;
   justify-content: space-between;
+  gap:40px;
   width: 10%;
+  
 }
 
 .footer--down--right>div {
   display: flex;
   flex-direction: column;
+  z-index: 1;
 }
 
+.footer--down--right>div>h3 {
+  cursor: pointer;
+  z-index: 1;
+  position: relative;
+}
+
+#downFooter {
+  position: absolute;
+  bottom: 0;
+  right:30%;
+  max-width: 350px;
+  max-height: 120px;
+  height: auto;
+  width: auto;
+}
+
+#cornerFooter {
+  position: absolute;
+  bottom:0;
+  right:0;
+  max-width: 200px;
+  max-height: 200px;
+  height: auto;
+  width: auto;
+}
+
+#mainFooter {
+  top:-130px;
+  right:40%;
+  max-width: 400px;
+  max-height: 400px;
+  position: absolute;
+  z-index: 0;
+}
