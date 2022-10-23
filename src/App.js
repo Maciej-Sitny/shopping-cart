@@ -4,7 +4,7 @@ import './App.css';
 import {nanoid} from 'nanoid'
 import {Master,Comfy,Enigma,Uphead,Squaro,Simplex} from './images/seats/seatsImgs'
 import {Magnifico,SimplusQuadratus,BladeSitter,Cuddlex,MovingLuxury,HomeJungle,QuoVadis} from './images/sofas/sofasImgs'
-import {Agilos,StraightForward,Plusquam,Roped,Ceramic,TheMill,Twistify} from './images/tables/tablesImgs'
+import {Agilos,StraightForward,Roped,Ceramic,TheMill,Twistify} from './images/tables/tablesImgs'
 import {Plumberus,GoldenLight,BlackWidow,NordicHesitation,StandingWave,StandingTriple,QuiteStable,BigBang,LoneLight,HexaOcto,Shovelio} from './images/lamps/lampsImgs'
 import {ChillingBirds,Planty,Us,HumbleNature,LongBirdRest,Moderni,Salad,JustBeauty,YellowDiamonds} from './images/pillows/pillowsImgs'
 import SeatGallery from './components/SeatGallery';
@@ -73,7 +73,7 @@ const data = {
               'id':nanoid(),
                 "imgSource": Magnifico,
                 "officialPrice": 170,
-                "discount":0,
+                "discount":10,
                 "name":"Magnifico",
                 "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mollis consequat risus in ornare. Praesent rhoncus elementum eros, at accumsan augue dapibus condimentum. Praesent dignissim varius pulvinar. Pellentesque sodales ex at dolor varius, quis tincidunt elit bibendum. Aenean eu urna ut arcu condimentum hendrerit nec eget nibh. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut vel sagittis velit. Sed ut eros vel lectus venenatis sodales."
             },
@@ -141,14 +141,6 @@ const data = {
                 "officialPrice": 280,
                 "discount":0,
                 "name":"Straight&Forward",
-                "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mollis consequat risus in ornare. Praesent rhoncus elementum eros, at accumsan augue dapibus condimentum. Praesent dignissim varius pulvinar. Pellentesque sodales ex at dolor varius, quis tincidunt elit bibendum. Aenean eu urna ut arcu condimentum hendrerit nec eget nibh. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut vel sagittis velit. Sed ut eros vel lectus venenatis sodales."
-            },
-            {
-              'id':nanoid(),
-                "imgSource": Plusquam,
-                "officialPrice": 180,
-                "discount":0,
-                "name":"Plusquam",
                 "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mollis consequat risus in ornare. Praesent rhoncus elementum eros, at accumsan augue dapibus condimentum. Praesent dignissim varius pulvinar. Pellentesque sodales ex at dolor varius, quis tincidunt elit bibendum. Aenean eu urna ut arcu condimentum hendrerit nec eget nibh. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut vel sagittis velit. Sed ut eros vel lectus venenatis sodales."
             },
             {

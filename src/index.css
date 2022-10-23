@@ -873,12 +873,35 @@ footer {
   align-items: center;
   justify-content: center;
   padding: 0;
+  transition: 0.3s;
+}
+
+.shop--seat:hover{
+  animation-name: shop--seat-animation;
+  background-color: #dbd4cd;
+
+}
+
+.fa-plus {
+  color: #47412a;
+  position: relative;
+  left:30%;
+  font-size: 40px;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.fa-plus:hover {
+  color: #ffffff;
 }
 
 .shop--seat > img{
   width: 600px;
   height: 400px;
   object-fit: cover;
+  cursor: pointer;
 }
 
 .shop--seat > div {
@@ -886,6 +909,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   width: 80%;
+  cursor: pointer;
 }
 
 .shop--seat--details--oldPrice {
@@ -914,4 +938,98 @@ footer {
   color:#fec501;
   font-size: 40px;
   margin: 0;
+}
+
+.shop--sofa {
+  background-color: #dbd4cd;
+  max-height: 600px;
+  max-width: 700px;
+  position: relative;
+  
+}
+
+
+
+.shop--sofa--details {
+  margin: 0 0 8% 0;
+  padding: 0 10% 0 10%;
+  position: absolute;
+  bottom: 0px;
+  color: #47412a;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.shop--sofa--details > h1, .shop--sofa--details > h2 {
+  margin: 0;
+  padding: 0px;
+  transition: 0.3s;
+}
+
+.shop--sofa > img {
+  max-width: 700px;
+  max-height: 600px;
+  position: relative;
+  /* bottom: 0; */
+  /* left: 0; */
+  transition: 0.3s;
+  
+}
+
+.shop--sofa > img:hover {
+  opacity:0.3;
+  padding: 0;
+}
+
+.shop--sofa:hover > .shop--sofa--details > h1 {
+  z-index:2;
+}
+
+.shop--sofa--details > h1:hover {
+  cursor:pointer;
+  color: white;
+  text-shadow: -1px -1px 0 #47412a, 1px -1px 0 #47412a, -1px 1px 0 #47412a, 1px 1px 0 #47412a;
+}
+
+
+.shop--sofa:hover > .sofa--plus{
+  z-index: 2;
+}
+
+.sofa--plus:hover > .shop--sofa > img {
+  opacity:0.3;
+}
+
+.sofa--plus:hover + .shop--sofa--details > h1 {
+  color: white;
+  text-shadow: -1px -1px 0 #47412a, 1px -1px 0 #47412a, -1px 1px 0 #47412a, 1px 1px 0 #47412a;
+}
+
+.sofa--plus {
+  position: absolute;
+  left: 85%;
+  top:7%;
+  cursor: pointer;
+}
+
+.sofa--plus:hover {
+  color: #ffffff;
+}
+
+.shop--sofa--discount {
+  position: absolute;
+  top: 5%;
+  left:5%;
+  color:#febb01;
+}
+
+.shop--sofa--details--newPrice {
+  color:#fe8801;
+  font-size: 40px;
+}
+
+.shop--seat--details--officialPrice {
+  font-size: 35px;
 }
