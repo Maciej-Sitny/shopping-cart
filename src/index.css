@@ -975,7 +975,7 @@ footer {
   /* bottom: 0; */
   /* left: 0; */
   transition: 0.3s;
-  
+  border: 7px solid #faf2ea;
 }
 
 .shop--sofa > img:hover {
@@ -1032,4 +1032,13 @@ footer {
 
 .shop--seat--details--officialPrice {
   font-size: 35px;
+}
+
+.filtr {
+  padding: 10px 20% 10px 20%;
+  display: flex;
+  justify-content: center;
+  gap:3%;
+  border-bottom: 1px solid var(--lightbrown);
+  margin-bottom: 2%;
 }

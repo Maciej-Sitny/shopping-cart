@@ -1,6 +1,41 @@
 import Navbar from "./Navbar"
 import {data} from '../App'
+import React from 'react'
 export default function Shop() {
+
+    const [displaySeats,setDisplaySeats] = React.useState(true);
+    const [displaySofas, setDisplaySofas] = React.useState(true);
+    const [displayTables, setDisplayTables] = React.useState(true);
+    const [displayLamps, setDisplayLamps] = React.useState(true);
+    const [displayPillows, setDisplayPillows] = React.useState(true);
+
+
+
+    let filtr = (
+        <div className="filtr">
+            <div>
+             <input type="checkbox" onClick={()=>{setDisplaySeats(prev=>{console.log(prev);return !prev; })}} checked={displaySeats} id="seats" name="seats" value="seats"/>
+             <label for="seats">Seats</label><br></br>
+             </div>
+             <div>
+             <input type="checkbox" onClick={()=>{setDisplaySofas(prev=>{console.log(prev);return !prev; })}} checked={displaySofas} id="sofas" name="sofas" value="sofas"/>
+             <label for="sofas">Sofas</label><br></br>
+             </div>
+             <div>
+             <input type="checkbox" onClick={()=>{setDisplayTables(prev=>{console.log(prev);return !prev; })}} checked={displayTables} id="tables" name="tables" value="tables"/>
+             <label for="Tables">Tables</label><br></br>
+             </div>
+             <div>
+             <input type="checkbox" onClick={()=>{setDisplayLamps(prev=>{console.log(prev);return !prev; })}} checked={displayLamps} id="lamps" name="lamps" value="lamps"/>
+             <label for="Lamps">Lamps</label><br></br>
+             </div>
+             <div>
+             <input type="checkbox" onClick={()=>{setDisplayPillows(prev=>{console.log(prev);return !prev; })}} checked={displayPillows} id="pillows" name="pillows" value="pillows"/>
+             <label for="pillows">Pillows</label><br></br>
+             </div>
+        </div>
+    )
+
     let seats = data.products.seats.map(seat=>{
         return <div className="shop--seat">
             {seat.discount>0 && <div className="shop--seat--discount"><h2 className="shop--seat--details--oldPrice--discount">-{seat.discount}%</h2></div> }
@@ -137,12 +172,14 @@ export default function Shop() {
 
     return (<div className="shop">
         <Navbar />
+        {filtr}
         <div className="shop--products">
-            {seats}
-            {sofas}
-            {tables}
-            {lamps}
-            {pillows}
+            
+            {displaySeats && seats}
+            {displaySofas && sofas}
+            {displayTables && tables}
+            {displayLamps && lamps}
+            {displayPillows && pillows}
         </div>
     </div>)
 }
