@@ -9,7 +9,33 @@ export default function Shop() {
     const [displayLamps, setDisplayLamps] = React.useState(true);
     const [displayPillows, setDisplayPillows] = React.useState(true);
 
+    const [currentProduct, setCurrentProduct] = React.useState();
+    const [displayCurrentProduct, setDisplayCurrentProduct]=React.useState(false);
 
+    const popup = (
+        <div className="popup">
+            
+        </div>
+    )
+
+    function popupson(product) {
+        return (
+            <div className="popup">
+                
+                <img alt="" src= {product.imgSource}/>
+                <div className="popup--right">
+                    <i class="fa-solid fa-xmark popup--right--plus" onClick={()=>{setDisplayCurrentProduct(false)}} ></i>
+                    <h1>{product.name}</h1>    
+                    <p>{product.description}</p>
+                    {product.discount ? <div>
+                        <h3>${product.officialPrice}</h3>
+                        <h1>${product.officialPrice-product.officialPrice*product.discount/100}</h1>                        
+                    </div> :  <h2>${product.officialPrice}</h2>}
+                    <button>Add to cart</button>
+                </div> 
+            </div>
+        )
+    }
 
     let filtr = (
         <div className="filtr">
@@ -39,10 +65,10 @@ export default function Shop() {
     let seats = data.products.seats.map(seat=>{
         return <div className="shop--seat">
             {seat.discount>0 && <div className="shop--seat--discount"><h2 className="shop--seat--details--oldPrice--discount">-{seat.discount}%</h2></div> }
-            <i class="fa-solid fa-plus"></i>
+            <i class="fa-solid fa-plus" ></i>
             <img src = {seat.imgSource} alt=''/>
             <div className="shop--seat--details">
-                <h1>{seat.name}</h1>
+                <h1 onClick={()=>{setCurrentProduct(seat);setDisplayCurrentProduct(true)}}>{seat.name}</h1>
                 {seat.discount ? 
                 <div>
                     <h2 className="shop--seat--details--oldPrice">
@@ -62,7 +88,7 @@ export default function Shop() {
                 {sofa.discount>0 && <div className="shop--sofa--discount"><h2 className="shop--seat--details--oldPrice--discount">-{sofa.discount}%</h2></div> }
                 <i class="fa-solid fa-plus sofa--plus" ></i>
                 <div className="shop--sofa--details">
-                    <h1>{sofa.name}</h1>
+                    <h1 onClick={()=>{setCurrentProduct(sofa);setDisplayCurrentProduct(true)}}>{sofa.name}</h1>
                     {sofa.discount ? 
                         <div>
                             <h2 className="shop--seat--details--oldPrice">
@@ -82,7 +108,7 @@ export default function Shop() {
                 {table.discount>0 && <div className="shop--sofa--discount"><h2 className="shop--seat--details--oldPrice--discount">-{table.discount}%</h2></div> }
                 <i class="fa-solid fa-plus sofa--plus" ></i>
                 <div className="shop--sofa--details">
-                    <h1>{table.name}</h1>
+                    <h1 onClick={()=>{setCurrentProduct(table);setDisplayCurrentProduct(true)}}>{table.name}</h1>
                     {table.discount ? 
                         <div>
                             <h2 className="shop--seat--details--oldPrice">
@@ -107,7 +133,7 @@ export default function Shop() {
                 {lamp.discount>0 && <div className="shop--sofa--discount"><h2 className="shop--seat--details--oldPrice--discount">-{lamp.discount}%</h2></div> }
                 <i class="fa-solid fa-plus sofa--plus" ></i>
                 <div className="shop--sofa--details">
-                    <h1>{lamp.name}</h1>
+                    <h1 onClick={()=>{setCurrentProduct(lamp);setDisplayCurrentProduct(true)}}>{lamp.name}</h1>
                     {lamp.discount ? 
                         <div>
                             <h2 className="shop--seat--details--oldPrice">
@@ -131,7 +157,7 @@ export default function Shop() {
             <i class="fa-solid fa-plus"></i>
             <img src = {lamp.imgSource} alt=''/>
             <div className="shop--seat--details">
-                <h1>{lamp.name}</h1>
+                <h1 onClick={()=>{setCurrentProduct(lamp);setDisplayCurrentProduct(true)}}>{lamp.name}</h1>
                 {lamp.discount ? 
                 <div>
                     <h2 className="shop--seat--details--oldPrice">
@@ -154,7 +180,7 @@ export default function Shop() {
             <i class="fa-solid fa-plus"></i>
             <img src = {pillow.imgSource} alt=''/>
             <div className="shop--seat--details">
-                <h1>{pillow.name}</h1>
+                <h1 onClick={()=>{setCurrentProduct(pillow);setDisplayCurrentProduct(true)}}>{pillow.name}</h1>
                 {pillow.discount ? 
                 <div>
                     <h2 className="shop--seat--details--oldPrice">
@@ -173,6 +199,8 @@ export default function Shop() {
     return (<div className="shop">
         <Navbar />
         {filtr}
+        {displayCurrentProduct && popupson(currentProduct)}
+        {displayCurrentProduct && <div className="grayson"></div>}
         <div className="shop--products">
             
             {displaySeats && seats}
