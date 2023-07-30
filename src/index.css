@@ -1156,3 +1156,10 @@ footer {
   opacity: 0.3;
   z-index: 5;
 }
+
+.popup--background{
+  z-index: 7;
+  background-color: transparent;
+  height: 100vh;
+  width: 100vw;
+}

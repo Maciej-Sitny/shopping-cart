@@ -1,7 +1,8 @@
 import Navbar from "./Navbar"
 import {data} from '../App'
 import React from 'react'
-export default function Shop() {
+import { useLocation } from "react-router";
+export default function Shop(props) {
 
     const [displaySeats,setDisplaySeats] = React.useState(true);
     const [displaySofas, setDisplaySofas] = React.useState(true);
@@ -11,29 +12,29 @@ export default function Shop() {
 
     const [currentProduct, setCurrentProduct] = React.useState();
     const [displayCurrentProduct, setDisplayCurrentProduct]=React.useState(false);
-
-    const popup = (
-        <div className="popup">
-            
-        </div>
-    )
-
+    let location = useLocation()
+    console.log(location);
+    const [productsInCart, setProductsInCart] = React.useState([]);
+    const [productsInCartAndAmount, setProductsInCartAndAmount] = React.useState([]);
     function popupson(product) {
         return (
-            <div className="popup">
+        
                 
-                <img alt="" src= {product.imgSource}/>
-                <div className="popup--right">
-                    <i class="fa-solid fa-xmark popup--right--plus" onClick={()=>{setDisplayCurrentProduct(false)}} ></i>
-                    <h1>{product.name}</h1>    
-                    <p>{product.description}</p>
-                    {product.discount ? <div>
-                        <h3>${product.officialPrice}</h3>
-                        <h1>${product.officialPrice-product.officialPrice*product.discount/100}</h1>                        
-                    </div> :  <h2>${product.officialPrice}</h2>}
-                    <button>Add to cart</button>
-                </div> 
-            </div>
+                <div className="popup" >
+                    
+                    <img alt="" src= {product.imgSource}/>
+                    <div className="popup--right">
+                        <i class="fa-solid fa-xmark popup--right--plus" onClick={()=>{setDisplayCurrentProduct(false)}} ></i>
+                        <h1>{product.name}</h1>    
+                        <p>{product.description}</p>
+                        {product.discount ? <div>
+                            <h3>${product.officialPrice}</h3>
+                            <h1>${product.officialPrice-product.officialPrice*product.discount/100}</h1>                        
+                        </div> :  <h2>${product.officialPrice}</h2>}
+                        <button>Add to cart</button>
+                    </div> 
+                </div>
+            
         )
     }
 
@@ -61,14 +62,44 @@ export default function Shop() {
              </div>
         </div>
     )
-
+    function isProductInCart(id){
+        if (productsInCart.includes(id)){
+            return true
+        }
+        else {
+            return false
+        }
+    }
     let seats = data.products.seats.map(seat=>{
-        return <div className="shop--seat">
+        return <div  className="shop--seat">
             {seat.discount>0 && <div className="shop--seat--discount"><h2 className="shop--seat--details--oldPrice--discount">-{seat.discount}%</h2></div> }
-            <i class="fa-solid fa-plus" ></i>
+            <i onClick={()=>{
+                        if (isProductInCart(seat.id)){
+                            
+                            let dupa=productsInCartAndAmount
+                            console.log(dupa)
+                                    for (let array in dupa){
+                                        console.log(array[0]===seat.id)
+                                        if (array[0]===seat.id){
+                                            
+                                            array[1]=array[1]+1
+                                        }
+                                    }
+                            setProductsInCartAndAmount(dupa)
+                        }
+                        else {
+                            setProductsInCartAndAmount([...productsInCartAndAmount,[seat.id,1]])
+                            setProductsInCart([...productsInCart,seat.id])
+                        }
+                        console.log(productsInCart)
+                    console.log(productsInCartAndAmount)
+                    }
+                    
+                } 
+            class="fa-solid fa-plus" ></i>
             <img src = {seat.imgSource} alt=''/>
             <div className="shop--seat--details">
-                <h1 onClick={()=>{setCurrentProduct(seat);setDisplayCurrentProduct(true)}}>{seat.name}</h1>
+                <h1 onClick={()=>{setCurrentProduct(seat);setDisplayCurrentProduct(true)}} >{seat.name}</h1>
                 {seat.discount ? 
                 <div>
                     <h2 className="shop--seat--details--oldPrice">
@@ -200,7 +231,7 @@ export default function Shop() {
         <Navbar />
         {filtr}
         {displayCurrentProduct && popupson(currentProduct)}
-        {displayCurrentProduct && <div className="grayson"></div>}
+        {displayCurrentProduct && <div className="grayson" onClick={()=>{setDisplayCurrentProduct(false)}}></div>}
         <div className="shop--products">
             
             {displaySeats && seats}
